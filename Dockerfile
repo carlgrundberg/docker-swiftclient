@@ -1,9 +1,7 @@
-FROM python:alpine3.14
-
-LABEL maintainer=tobias.jakobsson@elastx.se
+FROM python:slim
 
 ADD requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN apt update -y && apt-get install -y python3-dev build-essential && pip install --no-cache-dir -r requirements.txt
 
 ENTRYPOINT ["swift"]
 CMD ["-h"]
