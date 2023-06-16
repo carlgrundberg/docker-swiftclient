@@ -1,4 +1,4 @@
-# Swiftclient 4.1 Keystoneclient 5.0.1
+# Swiftclient 4.3.0 Keystoneclient 5.1.0
 
 A swiftly dockerized OpenStack Swift Client
 
